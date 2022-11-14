@@ -233,6 +233,60 @@ footer {
   border: solid 1px #E6EAF4;
 }
 
+.features__feedback {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.features__feedback-left {
+  margin-right: 10px;
+}
+
+.features__feedback-left h2 {
+  font-size: 48px;
+}
+
+.features__feedback-left p {
+  font-size: 18px;
+  font-weight: 26px;
+  opacity: 0.7;
+}
+
+.features__feedback-right {
+  display: flex;
+  align-items: center;
+}
+
+.features__box {
+  padding: 30px 40px 25px 40px;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.features__box h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.features__savings-box {
+  background-color: #dc5e26;
+  box-shadow: rgb(221 95 38 / 20%) 0px 6px 0px 0px;
+  margin-right: 30px;
+  min-height: 200px;
+}
+
+.features__rate-box {
+  background-color: #1D263A;
+  box-shadow: rgb(29 38 58 / 20%) 0px 6px 0px 0px;
+  min-height: 200px;
+}
+
+.stars {
+  color: #ff7039;
+}
+
 @keyframes rotation {
   from{
     transform: rotate(0deg);
@@ -261,6 +315,43 @@ footer {
     width: 75px;
     height: 75px;
   }
+
+    .cards {
+      grid-template-columns: auto;
+    }
+
+        .features__feedback {
+          flex-direction: column;
+        }
+    
+        .features__feedback-left {
+          margin-right: 0px;
+        }
+    
+        .features__feedback-left h2 {
+          font-size: 36px;
+        }
+    
+        .features__feedback-right {
+          flex-direction: column;
+          align-items: none;
+        }
+    
+        .features__box h3 {
+          font-size: 36px;
+        }
+    
+        .features__savings-box {
+          margin-right: 0px;
+          margin-bottom: 30px;
+          min-height: 100px;
+          min-width: 80vw;
+        }
+
+        .features__rate-box {
+          min-height: 100px;
+          min-width: 80vw;
+        }
 }
 
 @media (max-width: 720px) {
@@ -314,4 +405,39 @@ footer {
   .features {
     padding: 50px 10px;
   }
+
+  .cards {
+    grid-template-columns: auto;
+  }
+
+  .features__feedback {
+    flex-direction: column;
+  }
+
+  .features__feedback-left {
+    margin-right: 0px;
+  }
+
+  .features__feedback-left h2 {
+    font-size: 36px;
+  }
+
+  .features__feedback-right {
+    flex-direction: column;
+    align-items: none;
+  }
+
+  .features__box h3 {
+    font-size: 36px;
+  }
+
+  .features__savings-box {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .features__rate-box {
+    margin-left: 10px;
+  }
+
 }
